@@ -3,7 +3,7 @@ shift + F10 : 실행 단축키
 git add . : 모든 파일 add
 git clone 원격저장소 : 원격저장소의 메인 브렌치를 그대로 복사
 
-public static void main(String[] args) : 시작 전 필수입력
+public static void main(String[] args) : 시작 전 필수입력(main + tap)
 System.out.println(); : 출력코드
 |n : 줄바꿈 문자
 문자 연결 : "" + ""
@@ -12,10 +12,26 @@ System.out.println(); : 출력코드
 "숫자" + "숫자" = 숫자 + 숫자 / 숫자 + 숫자 = 숫자
 
 int : 숫자열(정수)
+double : 숫자열(실수)
 string : 문자열
+boolean : 논리값
 
 변수 사용시 주의사항
 변수명은 중복되지 않도록 지어야 한다.
 변수명은 숫자로 시작하면 안된다.
 변수는 재활용이 가능하다.
+
+산술연산자
++, -, *, /, %
+정수와 정수위 계산 결과는 정수, 실수로 계산하려면 실수로 나누기
+
+비교연산자
+>, <, >=, <=, ==, !=
+true, false >> 논리값(boolean)으로 결과가 나온다.
+
+논리연산자
+&&(and) : 둘 다 true 일때만 true, 그 외에는 false.
+||(or) : 둘 다 false 일때만 false, 그 외에는 true.
+
+
 
