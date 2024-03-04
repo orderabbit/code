@@ -1,0 +1,69 @@
+git 사용할때 필요한 명령어
+  -ls
+    -현재 경로의 파일 리스트 확인
+  - ls -al
+    - 파일 리스트를 자세히 보기(숨김 파일까지 보기)
+  - touch 파일명
+    - 파일명으로 새로운 파일 생성
+  - rm -rf 파일명
+    - 해당 파일(폴더)명을 삭제
+  - mkdir 폴더명
+    - 폴더명으로 폴더 생성
+  - cd 경로
+    - 해당 경로로 이동
+      - 상대 경로
+        - 현재 내 위치를 기준으로 이동
+      - 절대 경로
+        - 기준이 되는 위치로 부터 타고 들어가기
+  -cd ..
+    - 상위 폴더로 이동
+   
+  - git init
+    - Git 저장소(레피지토리) 생성 (경로명에 master)
+  - git config
+  
+  - git config --global init.defaultBranch
+    - 디폴트 브랜치명 확인
+  - git config --global init.defaultBranch main
+    - 디폴트 브랜치명 설정
+  - git status
+    - git 저장 상태 확인
+      - 빨간색 : 저장소에 반영되지 않음
+      - 녹색 : 저장소에 반영할 준비가 된 파일
+  - git add 파일명
+    - 해당 파일을 index에 넣는다
+  - git commit -m "메세지"
+    - 메세지 기록후 저장소에 저장
+  
+  - git config user.name "github 닉네임"
+    - 유저 닉네임 등록
+  - git config user.email "github email"
+    - 유저 이메일 등록
+  - git log --oneline
+    - commit 이력 확인
+  - git checkout commit번호
+    - 해당 commit시점으로 파일을 되돌림
+  - git checkout commit main
+    - main 브렌치 최신시점으로 되돌림
+  - git remote -v
+    - 등록된 원격 저장소 주소 확인
+  - git remote add 저장소별명 원격저장소주소
+  - git push 별명 main
+
+push 안되는 케이스
+1. Permission -> 권한
+  -> 자격증명관리자 -> 일반자격증명
+2. 아이디 / 비번 입력
+
+  - git fetch first main
+    - fist 저장소의 main 브렌치를 가져오기
+  - git branch --all
+    - 브렌치 확인
+  - git merge 별명/main
+    - 
+    
+ 
+
+
+ - start.
+    - 현재 폴더를 탐색기로 실행

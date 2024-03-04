@@ -1,0 +1,4 @@
+shift + F10 : 실행 단축키
+-Dfile.encoding=UTF-8 : 한글 인식률 증가
+git add . : 모든 파일 add
+git clone 원격저장소 : 원격저장소의 메인 브렌치를 그대로 복사
