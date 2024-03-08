@@ -25,4 +25,23 @@
 
   - abstract class 클래스 { } // 추상클래스
     abstract void 메서드 ( ) ; // 추상메서드
+
+생성자
+  -> 객체가 생성될 때 자동으로 호출되는 메서드
+  -> 작성규칙 : 리턴타입 X, 이름은 무조건 클래스이름과 동일하게
+  - public 클래스이름 ( )
+  - 생성자 new 클래스명
   
+ex)
+class 사람 {
+	public 사람( ) { }
+
+포맷팅 출력
+  %d : 정수
+  %f : 실수
+  %s : 문자열
+
+ex) 
+  int age = 20 ; 
+  String name = " 홍길동 " ;
+  - System.out.printf ( "안녕하세요 %d살 %f 입니다. 몸무게는 %s kg \n ", age, name, 68.5 ) ;
