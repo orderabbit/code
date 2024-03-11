@@ -1,0 +1,74 @@
+접근제어자 => 인스턴스변수와 메서드, 클래스에 사용
+  - public, protected, default, private
+  - public : 모든 클래스에서 접근가능
+  - protected : 같은 패키지 내의 클래스와 다른 패키지의 상속관계에 있는 클래스에서 접근가능
+  - default : 같은 패키지 내의 클래스에서 접근가능
+  - private : 같은 클래스 내에서만 접근가능
+
+private의 사용법 : setter 과 getter 사용
+
+ex)  Person p1 = new Person();
+p1.setId(20);
+System.out.println("제 번호는 " + p1.getId() + " 입니다.");
+// 출력 : 제 번호는 20 입니다.
+
+p1.setAge(-20); 
+// 나이가 음수인것은 이상하다.	
+
+
+class Person {
+    private int id;
+    private int age;
+
+// 카멜표기법 : 단어 여러개 조합을 명명할 때 의미가 바뀌는 부분에서 대문자를 넣어주는 방식
+
+
+// alt + insert => setter, getter 자동생성
+public void setId(int id) { // id setter
+        this.id = id;
+    }
+
+    public void setAge(int age) { // age setter
+        this.age = age;
+    }
+
+
+public int getId() { // id getter
+        return id;
+    }
+
+    public int getAge() { // age getter
+        return age;
+    }
+
+동적배열
+
+// 배열은 크기가 고정이라 유연하지 못함.
+// 동적배열 -> 길이를 정하지 않고 유동적으로 변하게 함.
+// 동적배열(ArrayList)은 객체만 저장 가능
+
+// 원시타입 -> int. double, boolean
+// 원시타입을 제외한 자바의 모든 것은 객체다.
+// 원시타입의 객체타입 존재.
+// int -> Integer, double -> Double, boolean -> Boolean
+
+ArrayList<Integer> list = new ArrayList<>(); // int ArrayList
+값 저장하기
+  - list.add(저장값); // 0번째 인덱스에 추가
+    list.add(저장값); // 1번째 인덱스에 추가
+    list.add(저장값); // 2번째 인덱스에 추가
+
+값 가져오기
+  - int 변수 = list.get(1); // 1번째 인덱스 값을 가져옴
+
+값 삭제하기
+  - list.remove(1); // 1번째 인덱스의 값을 삭제. 값이 지워진 인덱스는 이후 값들로 땡겨진다
+
+ArrayList의 모든 값 출력
+  - for(int i = 0; i < list.size(); i++){
+            System.out.println(list.get(i));
+        }
+
+입출력
+  - System.out.println(); // 표준 출력
+  - Scanner scan = new Scanner(System.in); // 표준 입력
